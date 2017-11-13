@@ -1,0 +1,44 @@
+{
+  "name": "obisidian",
+  "version": "0.0.3",
+  "description": "A full-utility pack to create native apps with rn and redux",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src -d dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monumentum/obisidian.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "react",
+    "flux",
+    "redux",
+    "utils",
+    "es2015"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-native": "2.0.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "immutable": "^3.8.2",
+    "react": "16.0.0-beta.5",
+    "react-native": "0.49.3",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-immutable": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+		"react-native": "*"
+  },
+  "author": "Guilherme Diego <guidiego.expgames@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monumentum/obisidian/issues"
+  },
+  "homepage": "https://github.com/monumentum/obisidian#readme"
+}
