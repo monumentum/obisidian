@@ -1,6 +1,6 @@
 {
   "name": "obisidian",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A full-utility pack to create native apps with rn and redux",
   "main": "dist/index.js",
   "scripts": {
@@ -20,20 +20,12 @@
     "utils",
     "es2015"
   ],
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-react-native": "2.0.0",
-    "babel-preset-react-native-stage-0": "^1.0.1",
-    "immutable": "^3.8.2",
-    "react": "16.0.0-beta.5",
-    "react-native": "0.49.3",
-    "react-redux": "^5.0.6",
-    "redux": "^3.7.2",
-    "redux-immutable": "^4.0.0"
-  },
   "peerDependencies": {
     "react": "*",
-		"react-native": "*"
+    "immutable": "*",
+    "react-redux": "*",
+    "redux": "*",
+    "redux-immutable": "*"
   },
   "author": "Guilherme Diego <guidiego.expgames@gmail.com>",
   "license": "MIT",

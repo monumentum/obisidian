@@ -1,1 +1,0 @@
-Object.defineProperty(exports,"__esModule",{value:true});var sideEffectMiddleware=exports.sideEffectMiddleware=function sideEffectMiddleware(sidEffects){return function(store){return function(next){return function(action){var sideEffect=sidEffects[action.type];if(sideEffect){sideEffect();}return next(action);};};};};exports.default=sideEffectMiddleware;
