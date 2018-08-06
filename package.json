@@ -1,11 +1,10 @@
 {
-  "name": "obisidian",
-  "version": "0.0.5",
+  "name": "@monumentuminc/obisidian",
+  "version": "0.0.6",
   "description": "A full-utility pack to create native apps with rn and redux",
   "main": "dist/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel src -d dist",
-    "prepublish": "npm run build"
+    "build": "./node_modules/.bin/babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -32,5 +31,10 @@
   "bugs": {
     "url": "https://github.com/monumentum/obisidian/issues"
   },
-  "homepage": "https://github.com/monumentum/obisidian#readme"
+  "homepage": "https://github.com/monumentum/obisidian#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-1": "^6.24.1"
+  }
 }

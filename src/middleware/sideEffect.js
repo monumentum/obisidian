@@ -1,9 +1,7 @@
-export const sideEffectMiddleware = sidEffects => store => next => action => {
-    const sideEffect = sidEffects[action.type];
-
-    if (sideEffect) {
-        sideEffect();
-    }
+export const sideEffectMiddleware = sideEffects => store => next => action => {
+    (sideEffects[action.type] || []).forEach((sideEffect) => {
+        store.dispatch(sideEffect);
+    });
 
     return next(action);
 }
