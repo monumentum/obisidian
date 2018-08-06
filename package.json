@@ -1,6 +1,6 @@
 {
   "name": "obisidian",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A full-utility pack to create native apps with rn and redux",
   "main": "dist/index.js",
   "scripts": {
