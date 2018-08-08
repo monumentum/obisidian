@@ -1,9 +1,15 @@
 export const sideEffectMiddleware = sideEffects => store => next => action => {
-    (sideEffects[action.type] || []).forEach((sideEffect) => {
+    const actionSideEffects = sideEffects[action.type] || {};
+
+    (actionSideEffects.pre || []).forEach((sideEffect) => {
         store.dispatch(sideEffect);
     });
 
-    return next(action);
+    next(action);
+
+    (actionSideEffects.post || []).forEach((sideEffect) => {
+        store.dispatch(sideEffect);
+    });
 }
 
 export default sideEffectMiddleware;

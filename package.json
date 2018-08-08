@@ -1,6 +1,6 @@
 {
   "name": "@monumentuminc/obisidian",
-  "version": "0.0.6",
+  "version": "0.0.11",
   "description": "A full-utility pack to create native apps with rn and redux",
   "main": "dist/index.js",
   "scripts": {
